@@ -1,0 +1,26 @@
+.c-main {
+	margin-top: calc(2rem + 50px);
+	height: calc(100vh - 2rem - 50px);
+}
+.c-main__content {
+	position: relative;
+	top: 45%;
+	left: 0;
+	p {
+		margin-top: 1rem;
+	}
+}
+.c-main__contact {
+	text-decoration: none;
+	padding: 0.5rem 2rem;
+	border-radius: 2px;
+	color: white;
+	background: coral;
+	display: inline-block;
+	margin-top: 1rem;
+}
+.arrow-down {
+	position: absolute;
+	bottom: 3rem;
+	left: 50%;
+}

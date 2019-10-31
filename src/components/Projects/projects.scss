@@ -1,0 +1,40 @@
+.c-projects {
+	outline: 1px solid green;
+}
+.c-projects__heading {
+	margin-top: 2rem;
+	text-align: center;
+}
+.l-project-wrapper {
+	margin-top: 2rem;
+	outline: 1px solid blue;
+}
+
+.c-proj {
+	margin-top: 1.5rem;
+	width: 100%;
+	border-radius: 2px;
+	background: white;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	figure {
+		img {
+			width: 100%;
+			border-radius: 2px 2px 0 0;
+		}
+		figcaption {
+			text-align: center;
+			margin: 0.5rem 1rem;
+		}
+	}
+	button {
+		margin: 0.5rem 1rem 1rem;
+		padding: 0.5rem;
+		width: calc(100% - 2rem);
+		color: white;
+		border: none;
+		outline: none;
+		background-color: brown;
+		border-radius: 2px;
+	}
+}

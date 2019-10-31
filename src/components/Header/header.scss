@@ -1,0 +1,48 @@
+.c-header {
+	outline: 1px solid red;
+	background: white;
+	padding: 1rem;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 9999;
+}
+.c-header__logo {
+	outline: 1px solid red;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.c-header__burger {
+	outline: 1px solid red;
+	background: none;
+	border: none;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.c-header__burger::before,
+.c-header__burger::after {
+	content: "";
+	width: 32px;
+	height: 2px;
+	display: block;
+	position: absolute;
+}
+.c-header__burger--open::before,
+.c-header__burger--open::after {
+	background: black;
+}
+.c-header__burger--open::before {
+	top: 8px;
+}
+.c-header__burger--open::after {
+	bottom: 8px;
+}

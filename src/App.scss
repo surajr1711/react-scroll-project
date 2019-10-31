@@ -1,0 +1,50 @@
+/* fluid typography ---------------------------------- */
+:root {
+	--desktop-font-size: 24;
+	--mobile-font-size: 16;
+}
+@font-face {
+	font-family: "Roboto";
+	src: local("Roboto"), url(./fonts/Roboto-Regular.ttf);
+}
+body {
+	font-size: calc(var(--mobile-font-size) * 1px);
+}
+@media screen and (min-width: 320px) {
+	body {
+		font-size: calc(
+			(var(--mobile-font-size) * 1px) +
+				(var(--desktop-font-size) - var(--mobile-font-size)) *
+				((100vw - 320px) / (1920 - 320))
+		);
+	}
+}
+@media screen and (min-width: 1920px) {
+	body {
+		font-size: calc(var(--desktop-font-size) * 1px);
+	}
+}
+/* ---------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	outline: 2px solid red;
+	width: 100vw;
+	background-color: #f3f3f3;
+	position: relative;
+	scroll-behavior: smooth;
+}
+.l-container {
+	outline: 1px dashed blue;
+	max-width: 1024px;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	margin: auto;
+	position: relative;
+}
